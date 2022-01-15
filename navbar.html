@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaSuM Villa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="tophead">
+            <div>
+                <span class="menulines" onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="brandlogo">
+                MaSuM
+            </div>
+            <div>
+                <button class="navbutton">Book Online</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Features</a>
+        <a href="#">Places to Visit</a>
+        <a href="#">Contact/Booking</a>
+    </div>
+
+    <div>
+        <button class="bottomButton">Book Online</button>
+    </div>
+
+    <script>
+        const openNav = () => {
+            document.getElementById('mySidenav').style.width = '350px';
+        }
+        const closeNav = () => {
+            document.getElementById('mySidenav').style.width = '0px';
+        }
+    </script>
+
+</body>
+</html>
